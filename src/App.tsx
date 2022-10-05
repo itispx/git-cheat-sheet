@@ -1,7 +1,12 @@
 import React from "react";
+import "./App.scss";
 
-const App: React.FC = () => {
-  return <div>git-cheat-sheet</div>;
-};
+function App() {
+  return (
+    <div className="App">
+      <h1>git-cheat-sheet</h1>
+    </div>
+  );
+}
 
 export default App;

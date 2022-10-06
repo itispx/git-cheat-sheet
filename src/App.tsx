@@ -48,7 +48,28 @@ function App() {
         if you want to push your code to a different branch you can do <br />
         <code>git push -u origin &lt;branch&gt;</code>
         <br />
+        <br />
         note: <code>-u</code> and <code>--set-upstream</code> do the same thing
+      </Section>
+
+      <Section title="pull">
+        to bring the latest changes from the remote repository run <br />
+        <code>git pull</code>
+      </Section>
+
+      <Section title="branching">
+        to create a branch simply run <br />
+        <code>git branch &lt;branch&gt;</code> <br />
+        to switch to the branch run <br />
+        <code>git checkout &lt;branch&gt;</code> <br />
+        <br />a shorter way to this is to run
+        <code>git checkout -b &lt;branch&gt;</code> <br />
+        this will create the branch and switch you to it
+        <br />
+        <br />
+        don't forget to push your branch to the remote repository so others can
+        access it
+        <code>git push -u origin &lt;branch&gt;</code>
       </Section>
     </div>
   );

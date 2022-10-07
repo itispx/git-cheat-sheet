@@ -25,8 +25,7 @@ function App() {
       <Section title="staging (add) &amp; commit">
         after making changes to a file, you can stage those changes with <br />
         <code>git add &lt;file&gt;</code> <br />
-        to stage all the changes you made in the current directory downwards,
-        run <br />
+        to stage all the changes you made in the current directory downwards, run <br />
         <code>git add .</code> <br />
         {/* TODO unstage  */}
         to commit the files you just staged to your local repository run <br />
@@ -36,8 +35,8 @@ function App() {
       <Section title="push">
         to push your code to the remote repository you need to run <br />
         <code>git push -u origin master</code> <br />
-        this assumes that you're pushing to the master branch the next time you
-        push your code you only need to run <br />
+        this assumes that you're pushing to the master branch the next time you push your
+        code you only need to run <br />
         <code>git push</code> <br />
         <br />
         the <code>-u</code> tag sets the default branch to whatever you choose
@@ -63,16 +62,16 @@ function App() {
         <code>git checkout -b &lt;branch&gt;</code> <br />
         this will create the branch and switch you to it <br />
         <br />
-        don't forget to push your branch to the remote repository so others can
-        access it <br />
+        don't forget to push your branch to the remote repository so others can access it
+        <br />
         <code>git push -u origin &lt;branch&gt;</code>
       </Section>
 
       <Section title="merge">
         to merge a branch to your current active branch run <br />
         <code>git merge &lt;branch&gt;</code> <br />
-        in the case of conflicts you'll need to manually resolve them and add
-        them with <br />
+        in the case of conflicts you'll need to manually resolve them and add them with
+        <br />
         <code>git add</code> <br />
         before merging the branches <br />
         <br />

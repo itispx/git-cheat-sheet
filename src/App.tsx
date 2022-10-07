@@ -15,13 +15,10 @@ function App() {
 
       <Section title="cloning a repository">
         to clone a local repository run <br />
-        <code>git clone /path/to/repo</code>
-        <br />
+        <code>git clone /path/to/repo</code> <br />
         to clone a remote repository run <br />
-        <code>git clone &lt;url&gt;</code>
-        <br />
-        to clone a remote repository using the GitHub CLI
-        <br />
+        <code>git clone &lt;url&gt;</code> <br />
+        to clone a remote repository using the GitHub CLI <br />
         <code>gh repo clone &lt;username&gt;/&lt;repository&gt;</code>
       </Section>
 
@@ -30,7 +27,7 @@ function App() {
         <code>git add &lt;file&gt;</code> <br />
         to stage all the changes you made in the current directory downwards,
         run <br />
-        <code>git add .</code>
+        <code>git add .</code> <br />
         {/* TODO unstage  */}
         to commit the files you just staged to your local repository run <br />
         <code>git commit -m "descriptive commit message"</code>
@@ -46,8 +43,7 @@ function App() {
         the <code>-u</code> tag sets the default branch to whatever you choose
         <br />
         if you want to push your code to a different branch you can do <br />
-        <code>git push -u origin &lt;branch&gt;</code>
-        <br />
+        <code>git push -u origin &lt;branch&gt;</code> <br />
         <br />
         note: <code>-u</code> and <code>--set-upstream</code> do the same thing
       </Section>
@@ -62,14 +58,27 @@ function App() {
         <code>git branch &lt;branch&gt;</code> <br />
         to switch to the branch run <br />
         <code>git checkout &lt;branch&gt;</code> <br />
-        <br />a shorter way to this is to run
-        <code>git checkout -b &lt;branch&gt;</code> <br />
-        this will create the branch and switch you to it
         <br />
+        a shorter way to this is to run <br />
+        <code>git checkout -b &lt;branch&gt;</code> <br />
+        this will create the branch and switch you to it <br />
         <br />
         don't forget to push your branch to the remote repository so others can
-        access it
+        access it <br />
         <code>git push -u origin &lt;branch&gt;</code>
+      </Section>
+
+      <Section title="merge">
+        to merge a branch to your current active branch run <br />
+        <code>git merge &lt;branch&gt;</code> <br />
+        in the case of conflicts you'll need to manually resolve them and add
+        them with <br />
+        <code>git add</code> <br />
+        before merging the branches <br />
+        <br />
+        to preview the difference between the two merging branches you can use
+        <br />
+        <code>git diff &lt;source-branch&gt; &lt;target-branch&gt;</code>
       </Section>
     </div>
   );

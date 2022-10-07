@@ -1,0 +1,13 @@
+@use "../styles/variables";
+
+@each $k, $v in $colors {
+  .bg-#{$k} {
+    background-color: $v;
+  }
+  .title-#{$k} {
+    color: darken($v, 6);
+  }
+  .text-#{$k} {
+    color: lighten($v, 6);
+  }
+}

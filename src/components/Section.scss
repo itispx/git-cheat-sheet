@@ -1,13 +1,37 @@
-@use "../styles/variables";
+@import "../styles/variables";
 
-@each $k, $v in $colors {
-  .bg-#{$k} {
-    background-color: $v;
+.section {
+  &.white {
+    background-color: $white;
+
+    h1 {
+      color: $black;
+    }
+
+    p {
+      color: $black;
+    }
+
+    code {
+      color: $white;
+      background-color: $black;
+    }
   }
-  .title-#{$k} {
-    color: darken($v, 6);
-  }
-  .text-#{$k} {
-    color: lighten($v, 6);
+
+  &.black {
+    background-color: $black;
+
+    h1 {
+      color: $white;
+    }
+
+    p {
+      color: $white;
+    }
+
+    code {
+      color: $black;
+      background-color: $white;
+    }
   }
 }

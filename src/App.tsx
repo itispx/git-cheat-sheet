@@ -3,17 +3,17 @@ import "./App.scss";
 
 import Section from "./components/Section";
 
-function App() {
+const App: React.FC = () => {
   return (
     <div className="App">
-      <Section title="creating a new repository">
+      <Section id={0} title="creating a new repository">
         to initialize a git repository inside a folder run <br />
         <code>git init</code> <br />
         to connect your local repository with a remote repository run <br />
         <code>git remote add origin &lt;remote-repo-url&gt;</code>
       </Section>
 
-      <Section title="cloning a repository">
+      <Section id={1} title="cloning a repository">
         to clone a local repository run <br />
         <code>git clone /path/to/repo</code> <br />
         to clone a remote repository run <br />
@@ -22,7 +22,7 @@ function App() {
         <code>gh repo clone &lt;username&gt;/&lt;repository&gt;</code>
       </Section>
 
-      <Section title="staging (add) &amp; commit">
+      <Section id={2} title="staging (add) &amp; commit">
         after making changes to a file, you can stage those changes with <br />
         <code>git add &lt;file&gt;</code> <br />
         to stage all the changes you made in the current directory downwards, run <br />
@@ -32,7 +32,7 @@ function App() {
         <code>git commit -m "descriptive commit message"</code>
       </Section>
 
-      <Section title="push">
+      <Section id={3} title="push">
         to push your code to the remote repository you need to run <br />
         <code>git push -u origin master</code> <br />
         this assumes that you're pushing to the master branch the next time you push your
@@ -47,12 +47,12 @@ function App() {
         note: <code>-u</code> and <code>--set-upstream</code> do the same thing
       </Section>
 
-      <Section title="pull">
+      <Section id={4} title="pull">
         to bring the latest changes from the remote repository run <br />
         <code>git pull</code>
       </Section>
 
-      <Section title="branching">
+      <Section id={5} title="branching">
         to create a branch simply run <br />
         <code>git branch &lt;branch&gt;</code> <br />
         to switch to the branch run <br />
@@ -67,7 +67,7 @@ function App() {
         <code>git push -u origin &lt;branch&gt;</code>
       </Section>
 
-      <Section title="merge">
+      <Section id={6} title="merge">
         to merge a branch to your current active branch run <br />
         <code>git merge &lt;branch&gt;</code> <br />
         in the case of conflicts you'll need to manually resolve them and add them with
@@ -81,6 +81,6 @@ function App() {
       </Section>
     </div>
   );
-}
+};
 
 export default App;

@@ -1,83 +1,85 @@
 import React from "react";
 import "./App.scss";
 
+import t from "./translations";
+
 import Section from "./components/Section/Section";
 import Code from "./components/Code/Code";
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <Section id={0} title="creating a new repository">
-        to initialize a git repository inside a folder run <br />
+      <Section id={0} title={t.init_title}>
+        {t.init_repo} <br />
         <Code>git init</Code>
-        to connect your local repository with a remote repository run <br />
+        {t.connect_repo_remote} <br />
         <Code>git remote add origin &lt;remote-repo-url&gt;</Code>
       </Section>
 
-      <Section id={1} title="cloning a repository">
-        to clone a local repository run <br />
+      <Section id={1} title={t.clone_repo_title}>
+        {t.clone_local_repo} <br />
         <Code>git clone /path/to/repo</Code>
-        to clone a remote repository run <br />
+        {t.clone_remote_repo} <br />
         <Code>git clone &lt;url&gt;</Code>
-        to clone a remote repository using the GitHub CLI <br />
+        {t.clone_remote_repo_gh_cli} <br />
         <Code>gh repo clone &lt;username&gt;/&lt;repository&gt;</Code>
       </Section>
 
-      <Section id={2} title="staging (add) &amp; commit">
-        after making changes to a file, you can stage those changes with <br />
+      <Section id={2} title={t.staging_title}>
+        {t.staging_file} <br />
         <Code>git add &lt;file&gt;</Code>
-        to stage all the changes you made in the current directory downwards, run <br />
+        {t.staging_all} <br />
         <Code>git add .</Code>
         {/* TODO unstage  */}
-        to commit the files you just staged to your local repository run <br />
+        {t.staging_commit} <br />
         <Code>git commit -m "descriptive commit message"</Code>
       </Section>
 
-      <Section id={3} title="push">
-        to push your Code to the remote repository you need to run <br />
+      <Section id={3} title={t.push_title}>
+        {t.push_to_remote} <br />
         <Code>git push -u origin master</Code>
-        this assumes that you're pushing to the master branch the next time you push your
-        Code you only need to run <br />
+        {t.push_to_remote_desc} <br />
+        {t.git_push} <br />
         <Code>git push</Code>
         <br />
-        the <Code inline>-u</Code> tag sets the default branch to whatever you choose
+        {t.u_note_1} <Code inline>-u</Code> {t.u_note_2}
         <br />
-        if you want to push your Code to a different branch you can do <br />
+        {t.push_different_branch} <br />
         <Code>git push -u origin &lt;branch&gt;</Code>
         <br />
-        note: <Code inline>-u</Code> and <Code inline>--set-upstream</Code> do the same
-        thing
+        {t.note} <Code inline>-u</Code> {t.set_upstream_note_1}{" "}
+        <Code inline>--set-upstream</Code> {t.set_upstream_note_2}
       </Section>
 
-      <Section id={4} title="pull">
-        to bring the latest changes from the remote repository run <br />
+      <Section id={4} title={t.pull_title}>
+        {t.pull_repo} <br />
         <Code>git pull</Code>
       </Section>
 
-      <Section id={5} title="branching">
-        to create a branch simply run <br />
+      <Section id={5} title={t.branch_title}>
+        {t.branch_create} <br />
         <Code>git branch &lt;branch&gt;</Code>
-        to switch to the branch run <br />
+        {t.branch_switch} <br />
         <Code>git checkout &lt;branch&gt;</Code>
         <br />
-        a shorter way to this is to run <br />
+        {t.branch_create_switch} <br />
         <Code>git checkout -b &lt;branch&gt;</Code>
-        this will create the branch and switch you to it <br />
+        {t.branch_create_switch_desc} <br />
         <br />
-        don't forget to push your branch to the remote repository so others can access it
+        {t.branch_create_switch_rem}
         <br />
         <Code>git push -u origin &lt;branch&gt;</Code>
       </Section>
 
-      <Section id={6} title="merge">
-        to merge a branch to your current active branch run <br />
+      <Section id={6} title={t.merge_title}>
+        {t.merge_to_active} <br />
         <Code>git merge &lt;branch&gt;</Code>
-        in the case of conflicts you'll need to manually resolve them and add them with
+        {t.merge_conflict_1}
         <br />
         <Code>git add</Code>
-        before merging the branches <br />
+        {t.merge_conflict_2} <br />
         <br />
-        to preview the difference between the two merging branches you can use
+        {t.merge_diff}
         <br />
         <Code>git diff &lt;source-branch&gt; &lt;target-branch&gt;</Code>
       </Section>

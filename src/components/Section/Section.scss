@@ -1,0 +1,47 @@
+@import "../../styles/variables";
+
+.Section {
+  padding: 50px 0 75px;
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+
+  &.White {
+    background-color: $white;
+
+    h1 {
+      color: $black;
+    }
+
+    p {
+      color: $black;
+
+      .Code {
+        color: $white;
+        background-color: $black;
+      }
+    }
+  }
+
+  &.Black {
+    background-color: $black;
+
+    h1 {
+      color: $white;
+    }
+
+    p {
+      color: $white;
+
+      .Code {
+        color: $black;
+        background-color: $white;
+      }
+    }
+  }
+}

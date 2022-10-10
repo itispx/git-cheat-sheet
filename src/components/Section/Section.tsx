@@ -9,8 +9,9 @@ interface Props {
 
 const Section: React.FC<Props> = ({ id, title, children }) => {
   return (
-    <section className={`section ${id % 2 === 0 ? ".white" : ".black"}`}>
+    <section className={`Section ${id % 2 === 0 ? "White" : "Black"}`}>
       <h1>{title}</h1>
+      <br />
       <p>{children}</p>
     </section>
   );

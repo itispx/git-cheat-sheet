@@ -1,83 +1,85 @@
 import React from "react";
 import "./App.scss";
 
-import Section from "./components/Section";
+import Section from "./components/Section/Section";
+import Code from "./components/Code/Code";
 
 const App: React.FC = () => {
   return (
     <div className="App">
       <Section id={0} title="creating a new repository">
         to initialize a git repository inside a folder run <br />
-        <code>git init</code> <br />
+        <Code>git init</Code>
         to connect your local repository with a remote repository run <br />
-        <code>git remote add origin &lt;remote-repo-url&gt;</code>
+        <Code>git remote add origin &lt;remote-repo-url&gt;</Code>
       </Section>
 
       <Section id={1} title="cloning a repository">
         to clone a local repository run <br />
-        <code>git clone /path/to/repo</code> <br />
+        <Code>git clone /path/to/repo</Code>
         to clone a remote repository run <br />
-        <code>git clone &lt;url&gt;</code> <br />
+        <Code>git clone &lt;url&gt;</Code>
         to clone a remote repository using the GitHub CLI <br />
-        <code>gh repo clone &lt;username&gt;/&lt;repository&gt;</code>
+        <Code>gh repo clone &lt;username&gt;/&lt;repository&gt;</Code>
       </Section>
 
       <Section id={2} title="staging (add) &amp; commit">
         after making changes to a file, you can stage those changes with <br />
-        <code>git add &lt;file&gt;</code> <br />
+        <Code>git add &lt;file&gt;</Code>
         to stage all the changes you made in the current directory downwards, run <br />
-        <code>git add .</code> <br />
+        <Code>git add .</Code>
         {/* TODO unstage  */}
         to commit the files you just staged to your local repository run <br />
-        <code>git commit -m "descriptive commit message"</code>
+        <Code>git commit -m "descriptive commit message"</Code>
       </Section>
 
       <Section id={3} title="push">
-        to push your code to the remote repository you need to run <br />
-        <code>git push -u origin master</code> <br />
+        to push your Code to the remote repository you need to run <br />
+        <Code>git push -u origin master</Code>
         this assumes that you're pushing to the master branch the next time you push your
-        code you only need to run <br />
-        <code>git push</code> <br />
+        Code you only need to run <br />
+        <Code>git push</Code>
         <br />
-        the <code>-u</code> tag sets the default branch to whatever you choose
+        the <Code inline>-u</Code> tag sets the default branch to whatever you choose
         <br />
-        if you want to push your code to a different branch you can do <br />
-        <code>git push -u origin &lt;branch&gt;</code> <br />
+        if you want to push your Code to a different branch you can do <br />
+        <Code>git push -u origin &lt;branch&gt;</Code>
         <br />
-        note: <code>-u</code> and <code>--set-upstream</code> do the same thing
+        note: <Code inline>-u</Code> and <Code inline>--set-upstream</Code> do the same
+        thing
       </Section>
 
       <Section id={4} title="pull">
         to bring the latest changes from the remote repository run <br />
-        <code>git pull</code>
+        <Code>git pull</Code>
       </Section>
 
       <Section id={5} title="branching">
         to create a branch simply run <br />
-        <code>git branch &lt;branch&gt;</code> <br />
+        <Code>git branch &lt;branch&gt;</Code>
         to switch to the branch run <br />
-        <code>git checkout &lt;branch&gt;</code> <br />
+        <Code>git checkout &lt;branch&gt;</Code>
         <br />
         a shorter way to this is to run <br />
-        <code>git checkout -b &lt;branch&gt;</code> <br />
+        <Code>git checkout -b &lt;branch&gt;</Code>
         this will create the branch and switch you to it <br />
         <br />
         don't forget to push your branch to the remote repository so others can access it
         <br />
-        <code>git push -u origin &lt;branch&gt;</code>
+        <Code>git push -u origin &lt;branch&gt;</Code>
       </Section>
 
       <Section id={6} title="merge">
         to merge a branch to your current active branch run <br />
-        <code>git merge &lt;branch&gt;</code> <br />
+        <Code>git merge &lt;branch&gt;</Code>
         in the case of conflicts you'll need to manually resolve them and add them with
         <br />
-        <code>git add</code> <br />
+        <Code>git add</Code>
         before merging the branches <br />
         <br />
         to preview the difference between the two merging branches you can use
         <br />
-        <code>git diff &lt;source-branch&gt; &lt;target-branch&gt;</code>
+        <Code>git diff &lt;source-branch&gt; &lt;target-branch&gt;</Code>
       </Section>
     </div>
   );

@@ -1,5 +1,6 @@
 export const pt_BR = {
   language: "Português",
+  document_title: "Folha de Cola Git do Px",
   by: "por",
   presentation_title: "Folha de Cola Git",
   presentation_desc: "Uma folha de cola para os comandos mais usados do git",

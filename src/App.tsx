@@ -1,12 +1,20 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./App.scss";
 
-import t from "./translations";
+import translations from "./translations";
 
 import Section from "./components/Section/Section";
 import Code from "./components/Code/Code";
 
 const App: React.FC = () => {
+  const [language, setLanguage] = useState<"en" | "pt_BR">("en");
+
+  const [t, setT] = useState(translations[language]);
+
+  useEffect(() => {
+    setT(translations[language]);
+  }, [language]);
+
   return (
     <div className="App">
       <Section id={0} title={t.presentation_title}>
@@ -18,6 +26,9 @@ const App: React.FC = () => {
         </a>
         <br />
         <br />
+        <h4 onClick={() => setLanguage("en")}>English</h4>
+        {" | "}
+        <h4 onClick={() => setLanguage("pt_BR")}>Português</h4>
       </Section>
 
       <Section id={1} title={t.init_title}>

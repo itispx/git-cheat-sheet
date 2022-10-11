@@ -1,5 +1,6 @@
 export const en = {
   language: "English",
+  document_title: "Px's Git Cheat Sheet",
   by: "by",
   presentation_title: "Git Cheat Sheet",
   presentation_desc: "Simple cheat sheet for the most used git commands",

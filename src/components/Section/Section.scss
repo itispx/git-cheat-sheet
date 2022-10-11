@@ -16,36 +16,36 @@
     font-size: 1.5rem;
   }
 
-  &.White {
-    background-color: $white;
+  &.Light {
+    background-color: $light;
 
     h1 {
-      color: $black;
+      color: $dark;
     }
 
     p {
-      color: $black;
+      color: $dark;
 
       .Code {
-        color: $white;
-        background-color: $black;
+        color: $light;
+        background-color: $dark;
       }
     }
   }
 
-  &.Black {
-    background-color: $black;
+  &.Dark {
+    background-color: $dark;
 
     h1 {
-      color: $white;
+      color: $light;
     }
 
     p {
-      color: $white;
+      color: $light;
 
       .Code {
-        color: $black;
-        background-color: $white;
+        color: $dark;
+        background-color: $light;
       }
     }
   }

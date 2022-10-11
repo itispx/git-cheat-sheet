@@ -27,11 +27,9 @@ const App: React.FC = () => {
         </a>
         <br />
         <br />
-        <br />
         <h4 onClick={() => setLanguage("en")}>{translations.en.language}</h4>
         {" | "}
         <h4 onClick={() => setLanguage("pt_BR")}>{translations.pt_BR.language}</h4>
-        <br />
         <br />
         <br />
         <br />

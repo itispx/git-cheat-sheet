@@ -1,10 +1,10 @@
-export const pt_BR = {
+const pt_BR = {
   language: "Português",
   document_title: "Folha de Cola Git do Px",
   by: "por",
   presentation_title: "Folha de Cola Git",
-  presentation_desc: "Uma folha de cola para os comandos mais usados do git",
-  report_issues: "Reporte problemas no",
+  presentation_desc: "uma folha de cola para os comandos mais usados do git",
+  report_issues: "reporte problemas no",
   init_title: "criando um repositório novo",
   init_repo: "para inicializar um repositório git dentro de uma pasta use",
   connect_repo_remote: "para conectar seu repositório local a um repositório remoto use",
@@ -46,3 +46,5 @@ export const pt_BR = {
   merge_diff: "para ver a diferença entre as duas branch's use",
   note: "nota:",
 };
+
+export default pt_BR;

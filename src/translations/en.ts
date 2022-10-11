@@ -1,10 +1,10 @@
-export const en = {
+const en = {
   language: "English",
   document_title: "Px's Git Cheat Sheet",
   by: "by",
   presentation_title: "Git Cheat Sheet",
-  presentation_desc: "Simple cheat sheet for the most used git commands",
-  report_issues: "Report issues at",
+  presentation_desc: "simple cheat sheet for the most used git commands",
+  report_issues: "report issues at",
   init_title: "creating a new repository",
   init_repo: "to initialize a git repository inside a folder run",
   connect_repo_remote: "to connect your local repository with a remote repository run",
@@ -43,3 +43,5 @@ export const en = {
   merge_diff: "to preview the difference between the two merging branches you can use",
   note: "note:",
 };
+
+export default en;

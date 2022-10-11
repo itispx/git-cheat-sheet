@@ -1,10 +1,13 @@
 {
+  "homepage": "https://itispx.github.io/git-cheat-sheet",
   "name": "git-cheat-sheet",
   "version": "1.0.0",
   "private": true,
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -23,6 +26,7 @@
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
+    "gh-pages": "^4.0.0",
     "sass": "^1.55.0"
   },
   "eslintConfig": {

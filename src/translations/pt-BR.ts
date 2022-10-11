@@ -24,8 +24,8 @@ const pt_BR = {
   push_to_remote_desc:
     "isso assume que você está enviando seus commits para a branch 'master'",
   git_push: "a próxima vez que você usar 'push' você precisa usar apenas",
-  u_note_1: "a",
-  u_note_2: "tag deixa você definir qual será a branch padrão para seus commits",
+  u_note_1: "a tag",
+  u_note_2: "deixa você definir qual será a branch padrão para seus commits",
   push_different_branch: "se você quiser enviar seu commit para uma branch diferente use",
   set_upstream_note_1: "e",
   set_upstream_note_2: "fazem a mesma coisa",

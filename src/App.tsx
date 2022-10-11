@@ -26,9 +26,22 @@ const App: React.FC = () => {
         </a>
         <br />
         <br />
-        <h4 onClick={() => setLanguage("en")}>English</h4>
+        <br />
+        <h4 onClick={() => setLanguage("en")}>{translations.en.language}</h4>
         {" | "}
-        <h4 onClick={() => setLanguage("pt_BR")}>Português</h4>
+        <h4 onClick={() => setLanguage("pt_BR")}>{translations.pt_BR.language}</h4>
+        <br />
+        <br />
+        <br />
+        <br />
+        {t.report_issues}{" "}
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href="https://github.com/itispx/git-cheat-sheet/issues"
+        >
+          GitHub
+        </a>
       </Section>
 
       <Section id={1} title={t.init_title}>

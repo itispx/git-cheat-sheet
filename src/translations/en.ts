@@ -4,6 +4,7 @@ export const en = {
   by: "by",
   presentation_title: "Git Cheat Sheet",
   presentation_desc: "Simple cheat sheet for the most used git commands",
+  report_issues: "Report issues at",
   init_title: "creating a new repository",
   init_repo: "to initialize a git repository inside a folder run",
   connect_repo_remote: "to connect your local repository with a remote repository run",

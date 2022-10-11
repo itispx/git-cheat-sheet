@@ -4,6 +4,7 @@ export const pt_BR = {
   by: "por",
   presentation_title: "Folha de Cola Git",
   presentation_desc: "Uma folha de cola para os comandos mais usados do git",
+  report_issues: "Reporte problemas no",
   init_title: "criando um repositório novo",
   init_repo: "para inicializar um repositório git dentro de uma pasta use",
   connect_repo_remote: "para conectar seu repositório local a um repositório remoto use",

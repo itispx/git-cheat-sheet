@@ -12,6 +12,7 @@ const App: React.FC = () => {
   const [t, setT] = useState(translations[language]);
 
   useEffect(() => {
+    document.title = translations[language].document_title;
     setT(translations[language]);
   }, [language]);
 

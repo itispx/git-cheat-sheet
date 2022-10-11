@@ -14,11 +14,11 @@ const pt_BR = {
   clone_remote_repo_gh_cli: "para clonar um repositório remoto usando a CLI do GitHub",
   staging_title: "staging (add) & commit",
   staging_file:
-    "após fazer mudanças em um arquivo, você pode pôr essas mundanças em uma área temporária (staging) com",
+    "após fazer alterações em um arquivo, você pode pôr essas mundanças em uma área temporária (staging) com",
   staging_all:
     "para pôr todas as mudanças que você fez no seu diretório atual para baixo na área temporária, use",
   staging_commit:
-    "para fazer commit dos arquivos que você pos na área temporária para seu repositório remoto use",
+    "para fazer commit dos arquivos que você pôs na área temporária para seu repositório remoto use",
   push_title: "push",
   push_to_remote: "para enviar seus commits ao seu repositório remoto use",
   push_to_remote_desc:

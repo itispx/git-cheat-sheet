@@ -17,7 +17,7 @@ const App: React.FC = () => {
   }, [language]);
 
   return (
-    <div className="App">
+    <div className="app">
       <Section id={0} title={t.presentation_title}>
         {t.presentation_desc} <br />
         <br />

@@ -8,11 +8,11 @@ export interface CodeProps {
 
 const Code: React.FC<CodeProps> = ({ inline, children }) => {
   return inline ? (
-    <code className="Code">{children}</code>
+    <code className="code">{children}</code>
   ) : (
     <>
       <br />
-      <code className="Code">{children}</code> <br />
+      <code className="code">{children}</code> <br />
       <br />
     </>
   );

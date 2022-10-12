@@ -1,7 +1,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
-.Code {
-  padding: 5px;
-  border-radius: 6px;
+@import "../../styles/breakpoints";
+
+.code {
   font-family: "Roboto Mono";
+
+  @include b0 {
+    padding: 1px;
+    border-radius: 1.5px;
+  }
+
+  @include b1 {
+    padding: 3px;
+    border-radius: 4px;
+  }
+
+  @include b2 {
+    padding: 5px;
+    border-radius: 6px;
+  }
 }

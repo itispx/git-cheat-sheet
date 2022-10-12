@@ -2,51 +2,94 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap");
 
 @import "../../styles/variables";
+@import "../../styles/breakpoints";
 
-.Section {
-  padding: 50px 0 75px;
-
-  h1 {
+.section {
+  .title {
     font-family: "Kanit", sans-serif;
-    font-size: 3rem;
   }
 
-  p {
+  .body {
     font-family: "Work Sans", sans-serif;
-    font-size: 1.5rem;
   }
 
-  &.Light {
+  &.light {
     background-color: $light;
 
-    h1 {
+    .title {
       color: $dark;
     }
 
-    p {
+    .body {
       color: $dark;
 
-      .Code {
+      .code {
         color: $light;
         background-color: $dark;
       }
     }
   }
 
-  &.Dark {
+  &.dark {
     background-color: $dark;
 
-    h1 {
+    .title {
       color: $light;
     }
 
-    p {
+    .body {
       color: $light;
 
-      .Code {
+      .code {
         color: $dark;
         background-color: $light;
       }
+    }
+  }
+
+  @include b0 {
+    padding: 5vw 0 10vw;
+
+    .title {
+      font-size: 10vw;
+    }
+
+    .body {
+      font-size: 5vw;
+    }
+  }
+
+  @include b1 {
+    padding: 30px 0 55px;
+
+    .title {
+      font-size: 1rem;
+    }
+
+    .body {
+      font-size: 0.75rem;
+    }
+  }
+
+  @include b2 {
+    padding: 50px 0 75px;
+
+    .title {
+      font-size: 2.5rem;
+    }
+
+    .body {
+      font-size: 1.75rem;
+    }
+  }
+
+  @include b3 {
+    .title {
+      font-size: 3rem;
+    }
+
+    .body {
+      font-size: 1.5rem;
     }
   }
 }

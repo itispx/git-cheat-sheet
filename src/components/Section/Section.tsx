@@ -10,10 +10,9 @@ export interface SectionProps {
 
 const Section: React.FC<SectionProps> = ({ style, id, title, children }) => {
   return (
-    <section style={style} className={`Section ${id % 2 === 0 ? "Light" : "Dark"}`}>
-      <h1>{title}</h1>
-      <br />
-      <p>{children}</p>
+    <section style={style} className={`section ${id % 2 === 0 ? "light" : "dark"}`}>
+      <h1 className="title">{title}</h1>
+      <p className="body">{children}</p>
     </section>
   );
 };

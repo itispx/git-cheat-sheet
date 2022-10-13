@@ -46,11 +46,16 @@ const App: React.FC = () => {
       <Section id={1} title={t.init_title}>
         {t.init_repo} <br />
         <Code>git init</Code>
-        {t.connect_repo_remote} <br />
-        <Code>git remote add origin &lt;remote-repo-url&gt;</Code>
       </Section>
 
-      <Section id={2} title={t.clone_repo_title}>
+      <Section id={2} title={t.remote_title}>
+        {t.remote_connect} <br />
+        <Code>git remote add origin &lt;remote-repo-url&gt;</Code>
+        {t.remote_disconnect} <br />
+        <Code>git remote rm origin</Code>
+      </Section>
+
+      <Section id={3} title={t.clone_repo_title}>
         {t.clone_local_repo} <br />
         <Code>git clone /path/to/repo</Code>
         {t.clone_remote_repo} <br />
@@ -59,7 +64,7 @@ const App: React.FC = () => {
         <Code>gh repo clone &lt;username&gt;/&lt;repository&gt;</Code>
       </Section>
 
-      <Section id={3} title={t.staging_title}>
+      <Section id={4} title={t.staging_title}>
         {t.staging_file} <br />
         <Code>git add &lt;file&gt;</Code>
         {t.staging_all} <br />
@@ -69,7 +74,7 @@ const App: React.FC = () => {
         <Code>git commit -m "descriptive commit message"</Code>
       </Section>
 
-      <Section id={4} title={t.push_title}>
+      <Section id={5} title={t.push_title}>
         {t.push_to_remote} <br />
         <Code>git push -u origin master</Code>
         {t.push_to_remote_desc} <br />
@@ -85,12 +90,12 @@ const App: React.FC = () => {
         <Code inline>--set-upstream</Code> {t.set_upstream_note_2}
       </Section>
 
-      <Section id={5} title={t.pull_title}>
+      <Section id={6} title={t.pull_title}>
         {t.pull_repo} <br />
         <Code>git pull</Code>
       </Section>
 
-      <Section id={6} title={t.branch_title}>
+      <Section id={7} title={t.branch_title}>
         {t.branch_create} <br />
         <Code>git branch &lt;branch&gt;</Code>
         {t.branch_switch} <br />
@@ -105,7 +110,7 @@ const App: React.FC = () => {
         <Code>git push -u origin &lt;branch&gt;</Code>
       </Section>
 
-      <Section id={7} title={t.merge_title}>
+      <Section id={8} title={t.merge_title}>
         {t.merge_to_active} <br />
         <Code>git merge &lt;branch&gt;</Code>
         {t.merge_conflict_1}

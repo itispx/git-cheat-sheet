@@ -7,7 +7,6 @@ const en = {
   report_issues: "report issues at",
   init_title: "creating a new repository",
   init_repo: "to initialize a git repository inside a folder run",
-  connect_repo_remote: "to connect your local repository with a remote repository run",
   clone_repo_title: "cloning a repository",
   clone_local_repo: "to clone a local repository run",
   clone_remote_repo: "to clone a remote repository run",
@@ -41,6 +40,9 @@ const en = {
     "in the case of conflicts you'll need to manually resolve them and add them with",
   merge_conflict_2: "before merging the branches",
   merge_diff: "to preview the difference between the two merging branches you can use",
+  remote_title: "remote",
+  remote_connect: "to connect your local repository with a remote repository run",
+  remote_disconnect: "to remove this connection run",
   note: "note:",
 };
 

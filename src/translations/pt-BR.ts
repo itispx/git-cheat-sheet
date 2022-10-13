@@ -7,7 +7,6 @@ const pt_BR = {
   report_issues: "reporte problemas no",
   init_title: "criando um repositório novo",
   init_repo: "para inicializar um repositório git dentro de uma pasta use",
-  connect_repo_remote: "para conectar seu repositório local a um repositório remoto use",
   clone_repo_title: "clonando um repositório",
   clone_local_repo: "para clonar um repositório local use",
   clone_remote_repo: "para clonar um repositório remoto use",
@@ -44,6 +43,9 @@ const pt_BR = {
     "no caso de um conflito você irá precisar resolve-los manualmente e adicioná-los com",
   merge_conflict_2: "antes de fazer a merge das branch's",
   merge_diff: "para ver a diferença entre as duas branch's use",
+  remote_title: "remote",
+  remote_connect: "para conectar seu repositório local a um repositório remoto use",
+  remote_disconnect: "para remover essa conexão use",
   note: "nota:",
 };
 

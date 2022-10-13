@@ -44,46 +44,46 @@ const App: React.FC = () => {
       </Section>
 
       <Section id={1} title={t.init_title}>
-        {t.init_repo} <br />
+        {t.init_repo}
         <Code>git init</Code>
       </Section>
 
       <Section id={2} title={t.remote_title}>
-        {t.remote_connect} <br />
+        {t.remote_connect}
         <Code>git remote add origin &lt;remote-repo-url&gt;</Code>
-        {t.remote_disconnect} <br />
+        {t.remote_disconnect}
         <Code>git remote rm origin</Code>
       </Section>
 
       <Section id={3} title={t.clone_repo_title}>
-        {t.clone_local_repo} <br />
+        {t.clone_local_repo}
         <Code>git clone /path/to/repo</Code>
-        {t.clone_remote_repo} <br />
+        {t.clone_remote_repo}
         <Code>git clone &lt;url&gt;</Code>
-        {t.clone_remote_repo_gh_cli} <br />
+        {t.clone_remote_repo_gh_cli}
         <Code>gh repo clone &lt;username&gt;/&lt;repository&gt;</Code>
       </Section>
 
       <Section id={4} title={t.staging_title}>
-        {t.staging_file} <br />
+        {t.staging_file}
         <Code>git add &lt;file&gt;</Code>
-        {t.staging_all} <br />
+        {t.staging_all}
         <Code>git add .</Code>
         {/* TODO unstage  */}
-        {t.staging_commit} <br />
+        {t.staging_commit}
         <Code>git commit -m "descriptive commit message"</Code>
       </Section>
 
       <Section id={5} title={t.push_title}>
-        {t.push_to_remote} <br />
+        {t.push_to_remote}
         <Code>git push -u origin master</Code>
-        {t.push_to_remote_desc} <br />
-        {t.git_push} <br />
+        {t.push_to_remote_desc}
+        {t.git_push}
         <Code>git push</Code>
         <br />
         {t.u_note_1} <Code inline>-u</Code> {t.u_note_2}
         <br />
-        {t.push_different_branch} <br />
+        {t.push_different_branch}
         <Code>git push -u origin &lt;branch&gt;</Code>
         <br />
         {t.note} <Code inline>-u</Code> {t.set_upstream_note_1}{" "}
@@ -91,35 +91,30 @@ const App: React.FC = () => {
       </Section>
 
       <Section id={6} title={t.pull_title}>
-        {t.pull_repo} <br />
+        {t.pull_repo}
         <Code>git pull</Code>
       </Section>
 
       <Section id={7} title={t.branch_title}>
-        {t.branch_create} <br />
+        {t.branch_create}
         <Code>git branch &lt;branch&gt;</Code>
-        {t.branch_switch} <br />
+        {t.branch_switch}
         <Code>git checkout &lt;branch&gt;</Code>
-        <br />
-        {t.branch_create_switch} <br />
+        {t.branch_create_switch}
         <Code>git checkout -b &lt;branch&gt;</Code>
         {t.branch_create_switch_desc} <br />
-        <br />
         {t.branch_create_switch_rem}
-        <br />
         <Code>git push -u origin &lt;branch&gt;</Code>
       </Section>
 
       <Section id={8} title={t.merge_title}>
-        {t.merge_to_active} <br />
+        {t.merge_to_active}
         <Code>git merge &lt;branch&gt;</Code>
         {t.merge_conflict_1}
-        <br />
         <Code>git add</Code>
         {t.merge_conflict_2} <br />
         <br />
         {t.merge_diff}
-        <br />
         <Code>git diff &lt;source-branch&gt; &lt;target-branch&gt;</Code>
       </Section>
     </div>

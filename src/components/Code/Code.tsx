@@ -11,7 +11,7 @@ const Code: React.FC<CodeProps> = ({ inline, children }) => {
     <code className="code">{children}</code>
   ) : (
     <>
-      <br />
+      <br /> <br />
       <code className="code">{children}</code> <br />
       <br />
     </>

@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/git-cheat-sheet/static/css/main.aebc2ad2.css",
-    "main.js": "/git-cheat-sheet/static/js/main.541b9074.js",
+    "main.js": "/git-cheat-sheet/static/js/main.467bb9c2.js",
     "static/js/787.70d1cded.chunk.js": "/git-cheat-sheet/static/js/787.70d1cded.chunk.js",
     "index.html": "/git-cheat-sheet/index.html",
     "main.aebc2ad2.css.map": "/git-cheat-sheet/static/css/main.aebc2ad2.css.map",
-    "main.541b9074.js.map": "/git-cheat-sheet/static/js/main.541b9074.js.map",
+    "main.467bb9c2.js.map": "/git-cheat-sheet/static/js/main.467bb9c2.js.map",
     "787.70d1cded.chunk.js.map": "/git-cheat-sheet/static/js/787.70d1cded.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.aebc2ad2.css",
-    "static/js/main.541b9074.js"
+    "static/js/main.467bb9c2.js"
   ]
 }

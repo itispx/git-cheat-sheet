@@ -50,18 +50,20 @@ const App: React.FC = () => {
 
       <Section id={2} title={t.remote_title}>
         {t.remote_connect}
-        <Code>git remote add origin &lt;remote-repo-url&gt;</Code>
+        <Code>git remote add origin &lt;{t.remote_command}&gt;</Code>
         {t.remote_disconnect}
         <Code>git remote rm origin</Code>
       </Section>
 
       <Section id={3} title={t.clone_repo_title}>
         {t.clone_local_repo}
-        <Code>git clone /path/to/repo</Code>
+        <Code>git clone {t.clone_command}</Code>
         {t.clone_remote_repo}
         <Code>git clone &lt;url&gt;</Code>
         {t.clone_remote_repo_gh_cli}
-        <Code>gh repo clone &lt;username&gt;/&lt;repository&gt;</Code>
+        <Code>
+          gh repo clone &lt;{t.username}&gt;/&lt;{t.repository}&gt;
+        </Code>
       </Section>
 
       <Section id={4} title={t.staging_title}>
@@ -71,7 +73,7 @@ const App: React.FC = () => {
         <Code>git add .</Code>
         {/* TODO unstage  */}
         {t.staging_commit}
-        <Code>git commit -m "descriptive commit message"</Code>
+        <Code>git commit -m "{t.staging_message}"</Code>
       </Section>
 
       <Section id={5} title={t.push_title}>
@@ -84,7 +86,7 @@ const App: React.FC = () => {
         {t.u_note_1} <Code inline>-u</Code> {t.u_note_2}
         <br />
         {t.push_different_branch}
-        <Code>git push -u origin &lt;branch&gt;</Code>
+        <Code>git push -u origin &lt;{t.branch_name}&gt;</Code>
         <br />
         {t.note} <Code inline>-u</Code> {t.set_upstream_note_1}{" "}
         <Code inline>--set-upstream</Code> {t.set_upstream_note_2}
@@ -95,38 +97,46 @@ const App: React.FC = () => {
         <Code>git pull</Code>
         {t.pull_branch}
         <Code>git fetch origin</Code>
-        <Code inline>git branch -f &lt;branch-name&gt; origin/&lt;branch-name&gt;</Code>
-        <Code>git checkout &lt;branch-name&gt;</Code>
+        <Code inline>
+          git branch -f &lt;{t.branch_name}&gt; origin/&lt;{t.branch_name}&gt;
+        </Code>
+        <Code>git checkout &lt;{t.branch_name}&gt;</Code>
       </Section>
 
       <Section id={7} title={t.branch_title}>
         {t.branch_create}
-        <Code>git branch &lt;branch&gt;</Code>
+        <Code>git branch &lt;{t.branch_name}&gt;</Code>
         {t.branch_switch}
-        <Code>git checkout &lt;branch&gt;</Code>
+        <Code>git checkout &lt;{t.branch_name}&gt;</Code>
         {t.branch_create_switch}
-        <Code>git checkout -b &lt;branch&gt;</Code>
+        <Code>git checkout -b &lt;{t.branch_name}&gt;</Code>
         {t.branch_create_switch_desc} <br />
         {t.branch_create_switch_rem}
-        <Code>git push -u origin &lt;branch&gt;</Code>
+        <Code>git push -u origin &lt;{t.branch_name}&gt;</Code>
       </Section>
 
       <Section id={8} title={t.merge_title}>
         {t.merge_to_active}
-        <Code>git merge &lt;branch&gt;</Code>
+        <Code>git merge &lt;{t.branch_name}&gt;</Code>
         {t.merge_conflict_1}
         <Code>git add</Code>
         {t.merge_conflict_2} <br />
         <br />
         {t.merge_diff}
-        <Code>git diff &lt;source-branch&gt; &lt;target-branch&gt;</Code>
+        <Code>
+          git diff &lt;{t.source_branch}&gt; &lt;{t.target_branch}&gt;
+        </Code>
       </Section>
 
       <Section id={9} title={t.mv_title}>
         {t.mv_desc}
-        <Code>git mv &lt;old-path&gt; &lt;new-path&gt;</Code>
+        <Code>
+          git mv &lt;{t.old_path}&gt; &lt;{t.new_path}&gt;
+        </Code>
         {t.mv_desc_2}
-        <Code>git mv &lt;old-name&gt; &lt;new-name&gt;</Code>
+        <Code>
+          git mv &lt;{t.old_name}&gt; &lt;{t.new_name}&gt;
+        </Code>
       </Section>
     </div>
   );

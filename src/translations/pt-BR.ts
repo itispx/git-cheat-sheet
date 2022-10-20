@@ -2,6 +2,7 @@ const pt_BR = {
   language: "Português",
   document_title: "Folha de Cola Git do Px",
   by: "por",
+  note: "nota:",
   presentation_title: "Folha de Cola Git",
   presentation_desc: "uma folha de cola para os comandos mais usados do git",
   report_issues: "reporte problemas no",
@@ -47,7 +48,9 @@ const pt_BR = {
   remote_title: "remote",
   remote_connect: "para conectar seu repositório local a um repositório remoto use",
   remote_disconnect: "para remover essa conexão use",
-  note: "nota:",
+  mv_title: "git mv",
+  mv_desc: "para mover um arquivo ou pasta use",
+  mv_desc_2: "também pode ser usado para renomear arquivos ou pastas",
 };
 
 export default pt_BR;

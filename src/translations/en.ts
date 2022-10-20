@@ -2,6 +2,7 @@ const en = {
   language: "English",
   document_title: "Px's Git Cheat Sheet",
   by: "by",
+  note: "note:",
   presentation_title: "Git Cheat Sheet",
   presentation_desc: "simple cheat sheet for the most used git commands",
   report_issues: "report issues at",
@@ -44,7 +45,9 @@ const en = {
   remote_title: "remote",
   remote_connect: "to connect your local repository with a remote repository run",
   remote_disconnect: "to remove this connection run",
-  note: "note:",
+  mv_title: "git mv",
+  mv_desc: "to move a file or folder run",
+  mv_desc_2: "it also can be used to rename files or folders",
 };
 
 export default en;

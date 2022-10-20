@@ -121,6 +121,13 @@ const App: React.FC = () => {
         {t.merge_diff}
         <Code>git diff &lt;source-branch&gt; &lt;target-branch&gt;</Code>
       </Section>
+
+      <Section id={9} title={t.mv_title}>
+        {t.mv_desc}
+        <Code>git mv &lt;old-path&gt; &lt;new-path&gt;</Code>
+        {t.mv_desc_2}
+        <Code>git mv &lt;old-name&gt; &lt;new-name&gt;</Code>
+      </Section>
     </div>
   );
 };

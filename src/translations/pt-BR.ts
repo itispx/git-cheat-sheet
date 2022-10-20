@@ -30,6 +30,7 @@ const pt_BR = {
   set_upstream_note_2: "fazem a mesma coisa",
   pull_title: "pull",
   pull_repo: "para trazer as últimas mudanças do seu repositório remoto use",
+  pull_branch: "para fazer o pull de um branch use",
   branch_title: "branching",
   branch_create: "para criar uma nova branch use",
   branch_switch: "para selecionar e usar a branch use",

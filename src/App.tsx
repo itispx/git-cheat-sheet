@@ -93,6 +93,10 @@ const App: React.FC = () => {
       <Section id={6} title={t.pull_title}>
         {t.pull_repo}
         <Code>git pull</Code>
+        {t.pull_branch}
+        <Code>git fetch origin</Code>
+        <Code inline>git branch -f &lt;branch-name&gt; origin/&lt;branch-name&gt;</Code>
+        <Code>git checkout &lt;branch-name&gt;</Code>
       </Section>
 
       <Section id={7} title={t.branch_title}>

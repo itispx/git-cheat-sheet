@@ -27,6 +27,7 @@ const en = {
   set_upstream_note_2: "do the same thing",
   pull_title: "pull",
   pull_repo: "to bring the latest changes from the remote repository run",
+  pull_branch: "to pull a branch run",
   branch_title: "branching",
   branch_create: "to create a branch run",
   branch_switch: "to switch to the branch run",

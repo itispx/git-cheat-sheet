@@ -23,9 +23,12 @@
     .body {
       color: $dark;
 
+      .code-background {
+        background-color: $dark;
+      }
+
       .code {
         color: $light;
-        background-color: $dark;
       }
     }
   }
@@ -40,9 +43,12 @@
     .body {
       color: $light;
 
+      .code-background {
+        background-color: $light;
+      }
+
       .code {
         color: $dark;
-        background-color: $light;
       }
     }
   }

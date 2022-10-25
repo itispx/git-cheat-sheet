@@ -2,21 +2,30 @@
 
 @import "../../styles/breakpoints";
 
-.code {
-  font-family: "Roboto Mono";
+.code-background {
+  display: inline-block;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.75;
+  }
 
   @include b0 {
-    padding: 1px;
+    padding: 1.5px;
     border-radius: 1.5px;
   }
 
   @include b1 {
-    padding: 3px;
+    padding: 4px;
     border-radius: 4px;
   }
 
   @include b2 {
-    padding: 5px;
+    padding: 6px;
     border-radius: 6px;
   }
+}
+
+.code {
+  font-family: "Roboto Mono";
 }
